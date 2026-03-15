@@ -1,19 +1,39 @@
-# Tin utils
-Tin utils is a utility mod that adds recipes, balance changes. Some recipes can be modified with traditional datapacks.
+# Tin Utils
 
-We try to keep this mod balanced and if we don't, sorry.
+Tin Utils is a utility and QoL mod that adds small recipe improvements and balance tweaks to the game.
 
-# platform
-this mod is primarily developed with the architectury api.
+Many of the recipes and tweaks can be modified or overridden using standard Minecraft datapacks.
 
-As such this mod is a multi-platform mod and such requires Architectury API.
+The goal of this mod is to stay relatively balanced while providing useful quality-of-life improvements.
 
-## dependencies
-The fabric version also requires the fabric api to be present.
+# Platforms
 
-neoforge version doesn't require any other external dependencies outside of architectury api
+This mod is developed using the Architectury API and supports multiple mod loaders.
 
-# tweaks and utility recipes
-- 2 logs to get 16 sticks
-- 8 logs to get 4 chests
+Currently supported loaders:
+- Fabric
+- NeoForge
 
+# Dependencies
+
+Common dependency:
+- Architectury API
+
+Fabric version:
+- Fabric API
+
+NeoForge version:
+- No additional dependencies beyond Architectury API
+
+# Tweaks and Utility Recipes
+
+Current tweaks include:
+
+- 2 logs → 16 sticks
+- 8 logs → 4 chests
+
+More tweaks and utility features will be added over time.
+
+# Datapack Support
+
+Many balance changes and recipes can be adjusted using standard datapacks, allowing modpacks and players to customize gameplay without modifying the mod itself.
