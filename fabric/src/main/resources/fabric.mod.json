@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "tinutils",
+  "version": "${version}",
+  "name": "tinutils",
+  "description": "A util mod for minecraft making it easier or harder",
+  "authors": [
+    "randomusert"
+  ],
+  "contact": {
+    "homepage": "https://randomusert-s-mods.github.io/web/"
+  },
+  "license": "MIT",
+  "icon": "assets/tinutils/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.randomusert.mods.tinutils.fabric.TinutilsFabric"
+    ],
+    "client": [
+      "io.github.randomusert.mods.tinutils.fabric.client.TinutilsFabricClient"
+    ]
+  },
+  "mixins": [
+    "tinutils.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
