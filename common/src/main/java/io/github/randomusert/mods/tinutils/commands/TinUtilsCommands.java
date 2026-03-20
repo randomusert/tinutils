@@ -17,17 +17,22 @@ public class TinUtilsCommands {
     }
 
     public static void registerAll(CommandDispatcher<CommandSourceStack> dispatcher) {
-        var root = net.minecraft.commands.Commands.literal("tinutils");
+        var root = Commands.literal("tinutils")
+                .executes(ctx -> {
+                    ctx.getSource().sendSuccess(
+                            () -> Component.literal("Tin Utils base command"),
+                            false
+                    );
+                    return 1;
+                });
 
         for (ICommandClass cmd : commands) {
             root.then(
-                    net.minecraft.commands.Commands.literal(cmd.getName())
+                    Commands.literal(cmd.getName())
                             .executes(ctx -> cmd.execute(ctx.getSource(), new String[]{}))
             );
         }
 
         dispatcher.register(root);
     }
-
-
 }

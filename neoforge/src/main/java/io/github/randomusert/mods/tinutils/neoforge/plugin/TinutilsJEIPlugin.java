@@ -15,12 +15,17 @@ import net.minecraft.world.item.ItemStack;
 
 @JeiPlugin
 public class TinutilsJEIPlugin implements IModPlugin {
+
+    // plugin UID
     private static final ResourceLocation UID = ResourceLocation.fromNamespaceAndPath(Tinutils.MOD_ID, "tinutils_jei_plugin");
+    // get Plugin unique ID
     @Override
     public ResourceLocation getPluginUid() {
         return UID;
     }
 
+    // "register" JEI recipe stuff
+    // essentially just adds JEI info page
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         registration.addIngredientInfo(

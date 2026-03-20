@@ -13,7 +13,7 @@ public class InfoCmd implements ICommandClass {
     @Override
     public int execute(CommandSourceStack source, String[] args) {
         source.sendSuccess(
-                () -> net.minecraft.network.chat.Component.literal("Tin Utils v1.0"),
+                () -> net.minecraft.network.chat.Component.literal("Tin Utils v0.1 beta 2"),
                 false
         );
         return 1;
