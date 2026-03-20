@@ -29,11 +29,20 @@ def build_all():
     run_cmd([gradle_cmd(), "neoforge:build"])
     print("fabric and neoforge build have been ran, if any errors occurred check the errors above for more details")
 
+def build_neoforge():
+    run_cmd([gradle_cmd(), "neoforge:build"])
+    print("neoforge build hasbeen been ran, if any errors occurred check the errors above for more details")
+def build_fabric():
+    run_cmd([gradle_cmd(), "fabric:build"])
+    print("fabric build hasbeen been ran, if any errors occurred check the errors above for more details")
+
 
 def main():
     parser = argparse.ArgumentParser(description="Tin utilities Minecraft mod build script")
     parser.add_argument("--build", action="store_true", help="Build all modules")
     parser.add_argument("--clean", action="store_true", help="Clean the project binaries")
+    parser.add_argument("--fabric", action="store_true", help="Build Fabric mod")
+    parser.add_argument("--neoforge", action="store_true", help="Build Neoforge mod")
     args = parser.parse_args()
 
     try:
@@ -41,7 +50,11 @@ def main():
             clean()
         if args.build:
             build_all()
-        if not (args.build or args.clean):
+        if args.fabric:
+            build_fabric()
+        if args.neoforge:
+            build_neoforge()
+        if not (args.build or args.clean or args.fabric or args.neoforge):
             parser.print_help()
     except KeyboardInterrupt:
         print("\n[INFO] Interrupted by user.")
