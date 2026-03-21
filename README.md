@@ -1,4 +1,6 @@
 # Tin Utils
+[![Build and upload tin utils Fabric JAR](https://github.com/randomusert/tinutils/actions/workflows/build_fabric.yml/badge.svg)](https://github.com/randomusert/tinutils/actions/workflows/build_fabric.yml)
+[![Build and upload tin utils Neoforge JAR](https://github.com/randomusert/tinutils/actions/workflows/build_neoforge.yml/badge.svg)](https://github.com/randomusert/tinutils/actions/workflows/build_neoforge.yml)
 
 Tin Utils is a utility and QoL mod that adds small recipe improvements and balance tweaks to the game.
 
