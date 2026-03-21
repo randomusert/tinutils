@@ -46,4 +46,4 @@ This is built manually using a custom-made tool: tin-mc built primarily for wind
 
 Itch.io link: https://randomusert.itch.io/tin-mc
 
-Source code: https://github.com/randomusert/tin-mcs
+Source code: https://github.com/randomusert/tin-mc
