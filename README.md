@@ -37,3 +37,11 @@ More tweaks and utility features will be added over time.
 # Datapack Support
 
 Many balance changes and recipes can be adjusted using standard datapacks, allowing modpacks and players to customize gameplay without modifying the mod itself.
+
+
+# Build tools
+This is built manually using a custom-made tool: tin-mc built primarily for windows.
+
+Itch.io link: https://randomusert.itch.io/tin-mc
+
+Source code: https://github.com/randomusert/tin-mcs
