@@ -13,10 +13,12 @@ import java.util.function.Function;
 
 public class BaseBlockEntity extends BaseBlock implements EntityBlock {
 
-    public BaseBlockEntity(Function<Properties, Properties> properties) {
+    public BaseBlockEntity(Properties properties) {
         super(properties);
     }
 
+
+    //Consumer MUST override this
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
         return null;

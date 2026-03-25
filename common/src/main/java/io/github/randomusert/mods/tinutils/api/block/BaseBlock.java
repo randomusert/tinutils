@@ -6,8 +6,8 @@ import net.minecraft.world.level.block.SoundType;
 import java.util.function.Function;
 
 public class BaseBlock extends Block {
-    public BaseBlock(Function<Properties, Properties> properties) {
-        super(properties.apply(Properties.of()));
+    public BaseBlock(Properties properties) {
+        super(properties);
     }
 
     public BaseBlock(SoundType sound, float hardness, float resistance) {
