@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:diamond_blocks"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "tinutils:crude_netherite"
+  }
+}

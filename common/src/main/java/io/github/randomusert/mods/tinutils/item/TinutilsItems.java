@@ -12,6 +12,9 @@ public class TinutilsItems {
     public static final RegistrySupplier<Item> CRUDE_DIAMOND = ITEMS.register("crude_diamond",
             () -> new Item(new Item.Properties().stacksTo(64).fireResistant()));
 
+    public static final RegistrySupplier<Item> CRUDE_NETHERITE = ITEMS.register("crude_netherite",
+            () -> new Item(new Item.Properties().stacksTo(64).fireResistant()));
+
     public static void init() {
         ITEMS.register();
     }
