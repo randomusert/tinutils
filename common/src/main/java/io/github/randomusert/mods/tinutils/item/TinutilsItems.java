@@ -3,7 +3,9 @@ package io.github.randomusert.mods.tinutils.item;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.randomusert.mods.tinutils.Tinutils;
+import io.github.randomusert.mods.tinutils.blocks.TinutilsBlocks;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 
 public class TinutilsItems {
@@ -14,6 +16,9 @@ public class TinutilsItems {
 
     public static final RegistrySupplier<Item> CRUDE_NETHERITE = ITEMS.register("crude_netherite",
             () -> new Item(new Item.Properties().stacksTo(64).fireResistant()));
+
+    public static final RegistrySupplier<BlockItem> BASIC_TIN_ENERGY_CUBE = ITEMS.register("basic_tin_energy_cube",
+            () -> new BlockItem(TinutilsBlocks.BASIC_TIN_ENERGY_CUBE.get(), new Item.Properties()));
 
     public static void init() {
         ITEMS.register();
